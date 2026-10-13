@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Palette</title>
+    <meta
+      name="description"
+      content="6人組グループ Palette（パレット）の公式サイト。最新ニュース、スケジュール、メディア出演情報、ライブ情報、メンバープロフィール、ファンクラブ情報をお届けします。"
+    />
+
+    <link rel="shortcut icon" href="img/99_others/favicon.webp" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Slick carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body id="top">
+    <div class="loader" id="loader" role="status">
+      <img
+        src="./img/99_others/palette-logo.webp"
+        alt=""
+        class="loader__logo"
+      />
+      <span class="loader__bar" aria-hidden="true">
+        <span class="loader__bar-fill"></span>
+      </span>
+      <span class="loader__text">LOADING</span>
+    </div>
+    <header class="header">
+      <a class="header__logo" href="#top">
+        <img src="./img/99_others/palette-logo.webp" alt="Palette" />
+      </a>
+      <nav class="header__nav">
+        <ul class="header__list list">
+          <li class="header__item">
+            <a href="#schedule" class="header__link link">SCHEDULE</a>
+          </li>
+          <li class="header__item">
+            <a href="#news" class="header__link link">NEWS</a>
+          </li>
+          <li class="header__item">
+            <a href="#media" class="header__link link">MEDIA</a>
+          </li>
+          <li class="header__item">
+            <a href="#live" class="header__link link">LIVE</a>
+          </li>
+          <li class="header__item">
+            <a href="#profile" class="header__link link">PROFILE</a>
+          </li>
+          <li class="header__item">
+            <a href="#fanclub" class="header__link link">FAN CLUB</a>
+          </li>
+          <li class="header__item">
+            <a href="#sns" class="header__link link">SNS</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-sns">
+        <ul class="header-sns__list list">
+          <li class="header-sns__item">
+            <a
+              href="https://x.com/?lang=ja"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link"
+            >
+              <img
+                src="./img/99_others/x.svg"
+                alt="Xのアイコン"
+                class="header-sns__icon"
+              />
+            </a>
+          </li>
+          <li class="header-sns__item">
+            <a
+              href="https://www.instagram.com/?hl=ja"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link"
+            >
+              <img
+                src="./img/99_others/instagram.svg"
+                alt="Instagramのアイコン"
+                class="header-sns__icon"
+              />
+            </a>
+          </li>
+          <li class="header-sns__item">
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link"
+            >
+              <img
+                src="./img/99_others/youtube.svg"
+                alt="YouTubeのアイコン"
+                class="header-sns__icon"
+              />
+            </a>
+          </li>
+          <li class="header-sns__item">
+            <a
+              href="https://www.tiktok.com/ja-JP/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link"
+            >
+              <img
+                src="./img/99_others/tiktok.svg"
+                alt="TicTokのアイコン"
+                class="header-sns__icon"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <button
+        class="toggle__btn"
+        type="button"
+        aria-expanded="false"
+        aria-controls="global-menu"
+      >
+        <span class="toggle__span"></span>
+        <span class="toggle__span"></span>
+        <span class="toggle__span"></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="mainvisual">
+        <img
+          src="./img/10_mainvisual/mainvisual.webp"
+          alt="青と白を基調にした衣装のPaletteメンバー6人"
+          class="mainvisual--img"
+        />
+      </section>
+
+      <section class="slick">
+        <div class="slick__items">
+          <ul class="slick__list list">
+            <li class="slick__item">
+              <a href="#" class="slick__link link">
+                <img
+                  src="./img/11_slick/slick-single-3rd.webp"
+                  alt="3rd SINGLE「Midnight Colors」のリリース広告"
+                  class="slick__link--img"
+                />
+              </a>
+            </li>
+            <li class="slick__item">
+              <a href="#" class="slick__link link">
+                <img
+                  src="./img/11_slick/slick-livedvd-2nd.webp"
+                  alt="2nd Anniversary LIVE映像のリリース広告"
+                  class="slick__link--img"
+                />
+              </a>
+            </li>
+            <li class="slick__item">
+              <a href="#" class="slick__link link">
+                <img
+                  src="./img/11_slick/slider-album-2nd.webp"
+                  alt="2nd ALBUM「COLOR OF US」のリリース広告"
+                  class="slick__link--img"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="today-schedule section__wrapper fadein" id="schedule">
+        <div class="today-schedule__left section__side">
+          <h2 class="section__title section__title--bl" id="schedule-title">
+            TODAY'S<br class="pc-only-break" />
+            SCHEDULE
+          </h2>
+          <div class="today-schedule__inner">
+            <time class="today-schedule__date" id="today-date">
+              <span class="today-schedule__date-number"></span>
+              <span class="today-schedule__day"></span>
+            </time>
+            <a href="#" class="viewall__link link">
+              <span class="viewall__text">VIEW ALL</span>
+            </a>
+          </div>
+        </div>
+        <ul class="today-schedule__list list">
+          <li class="today-schedule__item">
+            <a href="#" class="today-schedule__link link">
+              <span class="today-schedule__time"></span>
+              <span class="today-schedule__category">RELEASE</span>
+              <span class="today-schedule__title">
+                3rd SINGLE「Midnight Colors」
+              </span>
+            </a>
+          </li>
+          <li class="today-schedule__item">
+            <a href="#" class="today-schedule__link link">
+              <span class="today-schedule__time">
+                <time datetime="19:00">19:00</time>
+                <span class="today-schedule__separator">-</span>
+                <time datetime="20:00">20:00</time>
+              </span>
+              <span class="today-schedule__category">TV</span>
+              <span class="today-schedule__title">MUSIC STATION</span>
+            </a>
+          </li>
+          <li class="today-schedule__item">
+            <a href="#" class="today-schedule__link link">
+              <span class="today-schedule__time">
+                <time datetime="21:00">21:00</time>
+              </span>
+              <span class="today-schedule__category">WEB</span>
+              <span class="today-schedule__title">Palette CHANNEL</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="news section__wrapper fadein" id="news">
+        <div class="news__left section__side">
+          <h2 class="section__title section__title--bl" id="news-title">
+            NEWS
+          </h2>
+          <a href="#" class="viewall__link link">
+            <span class="viewall__text">VIEW ALL</span>
+          </a>
+        </div>
+        <div class="news__right">
+          <ul class="news__list list">
+            <li class="news__item">
+              <a href="#" class="news__link link">
+                <time class="news__date" datetime="2026-10-12">2026.10.12</time>
+                <span class="news__category">カテゴリー</span>
+                <span class="news__text">テキストテキスト</span>
+              </a>
+            </li>
+            <li class="news__item">
+              <a href="#" class="news__link link">
+                <time class="news__date" datetime="2026-10-12">2026.10.12</time>
+                <span class="news__category">カテゴリー</span>
+                <span class="news__text">テキストテキスト</span>
+              </a>
+            </li>
+            <li class="news__item">
+              <a href="#" class="news__link link">
+                <time class="news__date" datetime="2026-10-12">2026.10.12</time>
+                <span class="news__category">カテゴリー</span>
+                <span class="news__text">テキストテキスト</span>
+              </a>
+            </li>
+            <li class="news__item">
+              <a href="#" class="news__link link">
+                <time class="news__date" datetime="2026-10-12">2026.10.12</time>
+                <span class="news__category">カテゴリー</span>
+                <span class="news__text">テキストテキスト</span>
+              </a>
+            </li>
+            <li class="news__item">
+              <a href="#" class="news__link link">
+                <time class="news__date" datetime="2026-10-12">2026.10.12</time>
+                <span class="news__category">カテゴリー</span>
+                <span class="news__text">テキストテキスト</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="media section__wrapper fadein" id="media">
+        <div class="media__left section__side">
+          <h2 class="section__title section__title--bl" id="media-title">
+            MEDIA
+          </h2>
+          <a href="#" class="viewall__link link">
+            <span class="viewall__text">VIEW ALL</span>
+          </a>
+        </div>
+        <div class="media__right">
+          <ul class="media__list list">
+            <li class="media__item">
+              <a href="#" class="media__link link">
+                <img
+                  src="./img/99_others/tv-img.webp"
+                  alt=""
+                  class="media__img"
+                />
+                <div class="media__caption">
+                  <p class="media__text">TV</p>
+                  <p class="media__description">TV出演情報</p>
+                </div>
+              </a>
+            </li>
+            <li class="media__item">
+              <a href="#" class="media__link link">
+                <img
+                  src="./img/99_others/radio-img.webp"
+                  alt=""
+                  class="media__img"
+                />
+                <div class="media__caption">
+                  <p class="media__text">RADIO</p>
+                  <p class="media__description">ラジオ出演情報</p>
+                </div>
+              </a>
+            </li>
+            <li class="media__item">
+              <a href="#" class="media__link link">
+                <img
+                  src="./img/99_others/magazine-img.webp"
+                  alt=""
+                  class="media__img"
+                />
+                <div class="media__caption">
+                  <p class="media__text">MAGAZINE</p>
+                  <p class="media__description">雑誌掲載情報</p>
+                </div>
+              </a>
+            </li>
+            <li class="media__item">
+              <a href="#" class="media__link link">
+                <img
+                  src="./img/99_others/web-img.webp"
+                  alt=""
+                  class="media__img"
+                />
+                <div class="media__caption">
+                  <p class="media__text">WEB</p>
+                  <p class="media__description">WEBコンテンツ</p>
+                </div>
+              </a>
+            </li>
+            <li class="media__item">
+              <a href="#" class="media__link link">
+                <img
+                  src="./img/99_others/others-img.webp"
+                  alt=""
+                  class="media__img"
+                />
+                <div class="media__caption">
+                  <p class="media__text">OTHERS</p>
+                  <p class="media__description">その他の情報</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="live section__wrapper fadein" id="live">
+        <div class="live__inner section__side">
+          <h2 class="section__title section__title--wh" id="live-title">
+            LIVE
+          </h2>
+          <div class="live__links">
+            <a href="#" class="live__link link">
+              <span>LIVE DETAILS</span>
+            </a>
+            <a href="#" class="live__link link">
+              <span>LIVE ARCHIVE</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="profile section__wrapper fadein" id="profile">
+        <div class="section__side">
+          <h2 class="section__title section__title--bl" id="profile-title">
+            PROFILE
+          </h2>
+        </div>
+        <ul class="profile__list list">
+          <li class="profile__item">
+            <a
+              href="#"
+              class="profile__link link"
+              style="--member-color: #a77bc8"
+            >
+              <img
+                src="./img/01_Souta/2nd-fullalbum-Souta.webp"
+                alt="藤原颯汰"
+                class="profile__img"
+              />
+              <span class="profile__name">SOTA</span>
+            </a>
+          </li>
+          <li class="profile__item">
+            <a
+              href="#"
+              class="profile__link link"
+              style="--member-color: #e84b5a"
+            >
+              <img
+                src="./img/02_Shuto/2nd-fullalbum-Shuto.webp"
+                alt="相沢朱翔"
+                class="profile__img"
+              />
+              <span class="profile__name">SHUTO</span>
+            </a>
+          </li>
+          <li class="profile__item">
+            <a
+              href="#"
+              class="profile__link link"
+              style="--member-color: #4299d5"
+            >
+              <img
+                src="./img/03_Reo/2nd-fullalbum-Reo.webp"
+                alt="青木玲央"
+                class="profile__img"
+              />
+              <span class="profile__name">REO</span>
+            </a>
+          </li>
+          <li class="profile__item">
+            <a
+              href="#"
+              class="profile__link link"
+              style="--member-color: #f2c94c"
+            >
+              <img
+                src="./img/04_Hinata/2nd-fullalbum-Hinata.webp"
+                alt="山吹陽向"
+                class="profile__img"
+              />
+              <span class="profile__name">HINATA</span>
+            </a>
+          </li>
+          <li class="profile__item">
+            <a
+              href="#"
+              class="profile__link link"
+              style="--member-color: #45a982"
+            >
+              <img
+                src="./img/05_Sui/2nd-fullalbum-Sui.webp"
+                alt="森川翠"
+                class="profile__img"
+              />
+              <span class="profile__name">SUI</span>
+            </a>
+          </li>
+          <li class="profile__item">
+            <a
+              href="#"
+              class="profile__link link"
+              style="--member-color: #f5f5f2"
+            >
+              <img
+                src="./img/06_Yusei/2nd-fullalbum-Yusei.webp"
+                alt="白石悠生"
+                class="profile__img"
+              />
+              <span class="profile__name">YUSEI</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="fanclub section__wrapper fadein" id="fanclub">
+        <div class="fanclub__left section__side">
+          <h2 class="section__title section__title--wh" id="fanclub-title">
+            PALETTE MATE
+          </h2>
+          <p class="fanclub__sub-title">Palette Official Fan Club</p>
+          <a href="#" class="join__link link">
+            <span class="join__text">JOIN NOW</span>
+          </a>
+        </div>
+      </section>
+      <section class="sns section__wrapper fadein" id="sns">
+        <div class="sns__left section__side">
+          <h2 class="section__title section__title--bl" id="sns-title">
+            FOLLOW<br class="pc-only-break" />
+            PALETTE
+          </h2>
+        </div>
+        <div class="sns__right">
+          <ul class="sns__list list">
+            <li class="sns__item">
+              <a
+                href="https://x.com/?lang=ja"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="sns__link link"
+              >
+                <img
+                  src="./img/99_others/x.svg"
+                  alt="Xのアイコン"
+                  class="sns__icon"
+                />
+                <div class="sns__span">
+                  <span class="sns__name">X</span>
+                  <span class="sns__category">NEWS / INFORMATION</span>
+                  <span class="sns__sub">最新情報・出演情報</span>
+                </div>
+              </a>
+            </li>
+            <li class="sns__item">
+              <a
+                href="https://www.instagram.com/?hl=ja"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="sns__link link"
+              >
+                <img
+                  src="./img/99_others/instagram.svg"
+                  alt="Instagramのアイコン"
+                  class="sns__icon"
+                />
+                <div class="sns__span">
+                  <span class="sns__name">Instagram</span>
+                  <span class="sns__category">PHOTO / OFF SHOT</span>
+                  <span class="sns__sub">写真・オフショット</span>
+                </div>
+              </a>
+            </li>
+            <li class="sns__item">
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="sns__link link"
+              >
+                <img
+                  src="./img/99_others/youtube.svg"
+                  alt="YouTubeのアイコン"
+                  class="sns__icon"
+                />
+                <div class="sns__span">
+                  <span class="sns__name">YouTube</span>
+                  <span class="sns__category">MUSIC / MOVIE</span>
+                  <span class="sns__sub">MV・企画動画</span>
+                </div>
+              </a>
+            </li>
+            <li class="sns__item">
+              <a
+                href="https://www.tiktok.com/ja-JP/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="sns__link link"
+              >
+                <img
+                  src="./img/99_others/tiktok.svg"
+                  alt="TicTokのアイコン"
+                  class="sns__icon"
+                />
+                <div class="sns__span">
+                  <span class="sns__name">TikTok</span>
+                  <span class="sns__category">SHORT CONTENT</span>
+                  <span class="sns__sub">ショート動画</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner">
+        <a href="#top" class="footer__logo link">
+          <img
+            src="./img/99_others/palette-logo.webp"
+            alt="Palette"
+            class="footer__logo-img"
+          />
+        </a>
+        <nav class="footer__nav">
+          <ul class="footer__list list">
+            <li class="footer__item">
+              <a href="#news" class="footer__nav-link link">NEWS</a>
+            </li>
+            <li class="footer__item">
+              <a href="#schedule" class="footer__nav-link link">SCHEDULE</a>
+            </li>
+            <li class="footer__item">
+              <a href="#media" class="footer__nav-link link">MEDIA</a>
+            </li>
+            <li class="footer__item">
+              <a href="#live" class="footer__nav-link link">LIVE</a>
+            </li>
+            <li class="footer__item">
+              <a href="#profile" class="footer__nav-link link">PROFILE</a>
+            </li>
+            <li class="footer__item">
+              <a href="#fanclub" class="footer__nav-link link">FAN CLUB</a>
+            </li>
+          </ul>
+        </nav>
+        <small class="footer__copyright">© 2026 Palette</small>
+      </div>
+    </footer>
+    <a href="#top" class="pagetop">
+      <span class="pagetop__arrow" aria-hidden="true"></span>
+    </a>
+    <!-- jQuery and Slick carousel -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
