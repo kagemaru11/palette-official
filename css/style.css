@@ -459,8 +459,8 @@ img {
 .slick {
   width: 100%;
   max-width: 100%;
-  overflow: hidden;
   margin-bottom: 40px;
+  overflow: hidden;
 }
 @media (max-width: 920px) {
   .slick {
@@ -471,34 +471,21 @@ img {
   box-sizing: border-box;
   padding-inline: 6px;
 }
-@media (max-width: 920px) {
-  .slick__item {
-    margin-inline: 6px;
-  }
-}
-.slick__link {
+.slick__link, .slick__picture {
   display: block;
   width: 100%;
   overflow: hidden;
-  height: 100%;
 }
-.slick__link--img {
+.slick__img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media (max-width: 920px) {
-  .slick__link--img {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-}
 
-.slick-slide {
-  height: 100px;
+.slick__list .slick-slide {
+  height: auto;
 }
 
 .today-schedule {
@@ -521,7 +508,6 @@ img {
 @media (max-width: 920px) {
   .today-schedule__left {
     align-items: center;
-    gap: 6px 12px;
     width: 100%;
   }
 }
@@ -529,6 +515,7 @@ img {
   display: flex;
   flex: 1;
   flex-direction: column;
+  min-width: 0;
   margin: 0;
   padding: 0;
 }
@@ -543,13 +530,14 @@ img {
   align-items: center;
   gap: 16px;
   padding: 12px 0;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 .today-schedule__link:hover {
   color: #777;
   transform: translateX(8px);
 }
-.today-schedule__link:hover .today-schedule__link__time::before {
-  height: 100%;
+.today-schedule__link:hover .today-schedule__time::before {
+  height: 20px;
 }
 @media (max-width: 920px) {
   .today-schedule__link {
@@ -562,7 +550,9 @@ img {
 .today-schedule__time {
   position: relative;
   display: flex;
+  align-items: center;
   gap: 8px;
+  min-height: 1em;
   padding-left: 14px;
   font-family: "Noto Sans JP", sans-serif;
 }
@@ -577,26 +567,58 @@ img {
   transform: translateY(-50%);
   transition: height 0.3s ease;
 }
+.today-schedule__time time:first-child:not(:only-child) {
+  position: relative;
+}
+.today-schedule__time time:first-child:not(:only-child)::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 1px;
+  margin-left: 8px;
+  vertical-align: middle;
+  background-color: currentColor;
+}
+@media (max-width: 920px) {
+  .today-schedule__time time:first-child:not(:only-child)::after {
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 50%;
+    width: 1px;
+    height: 8px;
+    margin: 0;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 920px) {
+  .today-schedule__time {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .today-schedule__time time:first-child::after {
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 50%;
+    width: 1px;
+    height: 8px;
+    margin: 0;
+    transform: translateX(-50%);
+  }
+}
 .today-schedule__title {
   min-width: 0;
   margin: 0;
 }
 @media (max-width: 920px) {
   .today-schedule__title {
-    min-width: 0;
     overflow-wrap: anywhere;
   }
 }
 .today-schedule__date {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   gap: 15px;
-}
-@media (max-width: 920px) {
-  .today-schedule__date {
-    grid-column: 1;
-    grid-row: 2;
-  }
 }
 .today-schedule__date-number {
   font-size: 1.65rem;
@@ -611,16 +633,11 @@ img {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .today-schedule__item,
   .today-schedule__link,
-  .today-schedule__link::before {
+  .today-schedule__time::before {
     transition: none;
   }
 }
-.today-schedule__link:hover .today-schedule__time::before {
-  height: 20px;
-}
-
 .news {
   position: relative;
   display: flex;
@@ -679,19 +696,23 @@ img {
   transition: border-color 0.3s ease;
 }
 .news__link {
+  position: relative;
   display: grid;
   grid-template-columns: 160px 120px minmax(0, 1fr);
   align-items: center;
   gap: 16px;
   padding: 15px 0;
-  position: relative;
-  display: grid;
-  grid-template-columns: 160px 120px minmax(0, 1fr);
   transition: transform 0.3s ease, color 0.3s ease;
+}
+.news__link:hover {
+  color: #777;
+  transform: translateX(8px);
+}
+.news__link:hover .news__date::before {
+  height: 100%;
 }
 @media (max-width: 920px) {
   .news__link {
-    display: grid;
     grid-template-columns: minmax(78px, 0.9fr) minmax(70px, 0.8fr) minmax(0, 2fr);
     gap: 8px;
     width: 100%;

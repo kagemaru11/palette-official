@@ -38,25 +38,32 @@ $(function () {
     $("header").toggleClass("open");
   });
 
+  /*=================================================
+  スリックスライダー
+  ===================================================*/
+
   $(".slick__list").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     centerMode: true,
-    centerPadding: "10%",
+    centerPadding: "8%",
     arrows: true,
     autoplay: true,
     autoplaySpeed: 5000,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 920,
         settings: {
-          centerPadding: "14%",
+          centerPadding: "10%",
         },
       },
     ],
   });
 
-  // today-schedule
+  /*=================================================
+  TODAY'S SCHEDULE
+  ===================================================*/
+
   const today = new Date();
 
   const month = String(today.getMonth() + 1).padStart(2, "0");
