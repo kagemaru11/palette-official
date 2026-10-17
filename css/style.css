@@ -283,7 +283,7 @@ img {
   .header {
     min-height: 64px;
     gap: 16px;
-    padding: 8px 80px 8px 20px;
+    padding: 8px 80px 8px 5px;
   }
 }
 .header__nav {
@@ -882,9 +882,10 @@ img {
 }
 @media (max-width: 920px) {
   .live__inner {
+    min-height: 0;
     display: flex;
     flex-direction: column;
-    padding-top: 35%;
+    padding-top: 25%;
     gap: 8px;
   }
 }
@@ -1030,6 +1031,11 @@ img {
 .profile__link:hover .profile__name {
   opacity: 1;
   transform: translate(-50%, -50%);
+}
+@media (max-width: 920px) {
+  .profile__link:hover .profile__name {
+    transform: none;
+  }
 }
 .profile__img {
   display: block;
