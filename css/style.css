@@ -128,9 +128,7 @@ img {
 .fadein {
   opacity: 0;
   transform: translateY(24px);
-  transition:
-    opacity 0.7s ease,
-    transform 0.7s ease;
+  transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
 .fadein.is-visible {
@@ -157,16 +155,14 @@ img {
   background-color: #fff;
   opacity: 1;
   visibility: visible;
-  transition:
-    opacity 0.6s ease,
-    visibility 0.6s ease;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
 }
 .loader__logo {
   display: block;
   width: min(180px, 45vw);
   max-height: 120px;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
 }
 .loader__bar {
   display: block;
@@ -252,16 +248,7 @@ img {
   height: var(--flake-size);
   background-color: var(--flake-color);
   filter: drop-shadow(0 0 4px var(--flake-color));
-  clip-path: polygon(
-    50% 0,
-    60% 40%,
-    100% 50%,
-    60% 60%,
-    50% 100%,
-    40% 60%,
-    0 50%,
-    40% 40%
-  );
+  clip-path: polygon(50% 0, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0 50%, 40% 40%);
   pointer-events: none;
   animation: cursor-flake 1.2s ease-out forwards;
 }
@@ -277,11 +264,7 @@ img {
   }
   100% {
     opacity: 0;
-    transform: translate(
-        calc(-50% + var(--flake-x)),
-        calc(-50% + var(--flake-y))
-      )
-      scale(0) rotate(90deg);
+    transform: translate(calc(-50% + var(--flake-x)), calc(-50% + var(--flake-y))) scale(0) rotate(90deg);
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -289,6 +272,51 @@ img {
     animation: none;
   }
 }
+.category-tag {
+  --category-color: #707887;
+  --category-bg: #f0f2f5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 24px;
+  padding: 3px 6px;
+  border: 1px solid var(--category-color);
+  border-radius: 5px;
+  background-color: var(--category-bg);
+  color: var(--category-color);
+  font-size: 0.75rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+.category-tag--tv {
+  --category-color: #4b78b8;
+  --category-bg: #eaf2ff;
+}
+.category-tag--radio {
+  --category-color: #8a62a8;
+  --category-bg: #f3ecf8;
+}
+.category-tag--magazine {
+  --category-color: #b96f3e;
+  --category-bg: #fff1e7;
+}
+.category-tag--web {
+  --category-color: #398a76;
+  --category-bg: #e8f5f0;
+}
+.category-tag--live {
+  --category-color: #365b8c;
+  --category-bg: #e9f0f8;
+}
+.category-tag--release {
+  --category-color: #b85070;
+  --category-bg: #f9edf1;
+}
+.category-tag--others {
+  --category-color: #707887;
+  --category-bg: #f0f2f5;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -467,20 +495,8 @@ img {
   display: block;
   width: 100%;
   height: auto;
-  -webkit-mask-image: linear-gradient(
-    to bottom,
-    transparent 0%,
-    #000 12%,
-    #000 88%,
-    transparent 100%
-  );
-  mask-image: linear-gradient(
-    to bottom,
-    transparent 0%,
-    #000 12%,
-    #000 88%,
-    transparent 100%
-  );
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 12%, #000 88%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, #000 12%, #000 88%, transparent 100%);
 }
 @media (max-width: 920px) {
   .mainvisual--img {
@@ -505,8 +521,7 @@ img {
   box-sizing: border-box;
   padding-inline: 6px;
 }
-.slick__link,
-.slick__picture {
+.slick__link, .slick__picture {
   display: block;
   width: 100%;
   overflow: hidden;
@@ -516,7 +531,7 @@ img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .slick__list .slick-slide {
@@ -565,9 +580,7 @@ img {
   align-items: center;
   gap: 16px;
   padding: 12px 0;
-  transition:
-    color 0.3s ease,
-    transform 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 .today-schedule__link:hover {
   color: #777;
@@ -578,10 +591,7 @@ img {
 }
 @media (max-width: 920px) {
   .today-schedule__link {
-    grid-template-columns: minmax(64px, 0.8fr) minmax(58px, 0.7fr) minmax(
-        0,
-        2fr
-      );
+    grid-template-columns: minmax(64px, 0.8fr) minmax(58px, 0.7fr) minmax(0, 2fr);
     gap: 8px;
     padding-block: 11px;
     font-size: 0.75rem;
@@ -742,9 +752,7 @@ img {
   align-items: center;
   gap: 16px;
   padding: 15px 0;
-  transition:
-    transform 0.3s ease,
-    color 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 .news__link:hover {
   color: #777;
@@ -755,10 +763,7 @@ img {
 }
 @media (max-width: 920px) {
   .news__link {
-    grid-template-columns: minmax(78px, 0.9fr) minmax(70px, 0.8fr) minmax(
-        0,
-        2fr
-      );
+    grid-template-columns: minmax(78px, 0.9fr) minmax(70px, 0.8fr) minmax(0, 2fr);
     gap: 8px;
     width: 100%;
   }
@@ -967,9 +972,7 @@ img {
   letter-spacing: 0.1em;
   text-decoration: none;
   backdrop-filter: blur(4px);
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 @media (max-width: 920px) {
   .live__link {
@@ -1089,7 +1092,7 @@ img {
   width: 100%;
   aspect-ratio: 3/4;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 920px) {
   .profile__img {
@@ -1097,7 +1100,7 @@ img {
     width: 100%;
     aspect-ratio: 3/4;
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
   }
 }
 .profile__name {
@@ -1110,9 +1113,7 @@ img {
   letter-spacing: 0.08em;
   opacity: 0;
   transform: translate(-50%, calc(-50% + 8px));
-  transition:
-    opacity 0.35s ease,
-    transform 0.35s ease;
+  transition: opacity 0.35s ease, transform 0.35s ease;
   white-space: nowrap;
 }
 @media (max-width: 920px) {
@@ -1187,8 +1188,7 @@ img {
     margin: 0;
   }
 }
-.fanclub__sub-title::before,
-.fanclub__sub-title::after {
+.fanclub__sub-title::before, .fanclub__sub-title::after {
   content: "";
   width: 24px;
   height: 1px;
@@ -1251,8 +1251,7 @@ img {
     gap: 20px;
   }
 }
-.sns__left,
-.sns__right {
+.sns__left, .sns__right {
   min-width: 0;
 }
 .sns__list {
@@ -1353,4 +1352,4 @@ img {
 .footer__copyright {
   font-size: 0.5625rem;
   letter-spacing: 0.05em;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
